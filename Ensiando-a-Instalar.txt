@@ -1,0 +1,42 @@
+-- INTEGRAÇÃO BOLETO BARATO --
+
+1º - Acesse o painel -> https://cobrancaporboleto.com.br
+
+	- No canto superior direito clique em seu nome
+		- Configurações da API
+		- Gerar Token
+		-- Copie o tokem
+		-- Caso já tenha um tokem gerado, você pode solictar o envio para seu email
+
+2º - Acesse o WHMCS
+
+	- Opções
+		- Campos Personalizados dos Clientes
+
+3º - Crie o campo CPF/CNPJ
+
+	- Tipo do Campo -> Caixa de Texto
+		- Campo Obrigatório  *
+		- Mostrar no Formulário de Pedido *
+		- Exibir na Fatura *
+
+4º - Descompactar o arquivo
+
+	- boletobarato.zip
+	- na pasta raiz do WHMCS
+
+Arvore do arquivo boletobarato.zip
+
+	- modules
+	|
+	--gateways
+		- boletobarato.php
+	  |
+	  --boletobarato
+	  	- gerar.php
+	  |
+	  |
+	  --callback
+	  	- boletobarato.php
+
+
