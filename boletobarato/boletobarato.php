@@ -193,7 +193,7 @@ function boletobarato_link($params) {
 
     $boleto = array();
 
-    $boleto["config.urlretorno"] = $systemUrl.'/callback/boletobarato.php';
+    $boleto["config.urlretorno"] = $systemUrl.'modules/gateways/callback/boletobarato.php';
 
     $boleto["config.enviaemail"] = 0;
     $boleto["config.enviasms"] = 0;
